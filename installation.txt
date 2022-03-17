@@ -1,0 +1,16 @@
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo -i -u postgres
+
+sudo /etc/init.d/postgresql-8.3 status
+sudo /etc/init.d/postgresql-8.3 start
+sudo /etc/init.d/postgresql-8.3 stop
+
+
+service postgresql status
+service postgresql restart
+
+ /etc/postgresql/12/main/postgresql.conf
+ 
+ /var/lib/postgresql/12/main
+ /var/run/postgresql
