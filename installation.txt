@@ -1,3 +1,12 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+ https://serverfault.com/questions/159339/ubuntu-get-postgresql-running
+ https://serverfault.com/questions/86204/postgres-8-3-on-ubuntu-where-are-the-server-logs
+ https://chartio.com/resources/tutorials/how-to-set-the-default-user-password-in-postgresql/
+ https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
+ https://tableplus.com/blog/2018/04/postgresql-how-to-grant-access-to-users.html
+ https://www.postgresqltutorial.com/postgresql-list-users/
+
+
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 sudo -i -u postgres
@@ -14,3 +23,11 @@ service postgresql restart
  
  /var/lib/postgresql/12/main
  /var/run/postgresql
+
+show users;
+
+select * from pg_catalog.pg_user;
+
+ create user pegareporting with encrypted password 'postgres';
+ alter user pegareporting with SUPERUSER;
+ 
