@@ -31,3 +31,5 @@ select * from pg_catalog.pg_user;
  create user pegareporting with encrypted password 'postgres';
  alter user pegareporting with SUPERUSER;
  
+ In case MacOS if the pg admin 4 is not in applications folder , open pg admin4 in terminal and perform open pgAdmin\ 4 located in Contens/MacOS
+ 
